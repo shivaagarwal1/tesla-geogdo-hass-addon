@@ -8,5 +8,5 @@
   "boot": "auto",
   "options": {},
   "schema": {},
-  "image": "ghcr.io/home-assistant/{arch}-tesla-geogdo"
+  "image": null
 }
