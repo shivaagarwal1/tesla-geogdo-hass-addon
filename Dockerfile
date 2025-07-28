@@ -1,0 +1,1 @@
+FROM ghcr.io/brchri/tesla-geogdo:latest
