@@ -1,11 +1,12 @@
 {
-  "name": "Tesla GeoGDO",
+  "name": "Tesla Garage Door Opener",
   "version": "1.0.0",
   "slug": "tesla_geogdo",
-  "description": "Geo-fenced Tesla-triggered garage door opener via Home Assistant",
+  "description": "Trigger garage door using Tesla location",
+  "arch": ["amd64", "armv7", "aarch64"],
   "startup": "application",
   "boot": "auto",
   "options": {},
   "schema": {},
-  "image": "ghcr.io/brchri/tesla-geogdo"
+  "image": "ghcr.io/home-assistant/{arch}-tesla-geogdo"
 }
