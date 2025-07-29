@@ -1,18 +1,16 @@
-# Tesla GeoGDO Add-on for Home Assistant
+# Tesla Garage Door Opener
 
-This is a custom Home Assistant add-on that wraps [brchri/tesla-geogdo](https://github.com/brchri/tesla-geogdo).
-
-## Installation
-
-1. Add this repo as an **external add-on repository** in Home Assistant:
-   ```
-   https://github.com/YOUR_USERNAME/tesla-geogdo-hass-addon
-   ```
-
-2. Go to **Settings > Add-ons > Add-on Store**, scroll to find **Tesla GeoGDO**, install and start it.
-
-3. Mount your `config.yml` into `/config/tesla-geogdo/config.yml` or place it manually.
+This Home Assistant add-on triggers your garage door when your Tesla enters a defined radius using Tesla API.
 
 ## Configuration
 
-See `sample_config.yml` for example setup.
+Edit `configuration.yaml` in Home Assistant UI or use Add-on options:
+
+```yaml
+client_id: "your-client-id"
+client_secret: "your-client-secret"
+redirect_uri: "https://your-home-assistant-url/auth/external/callback"
+refresh_token: "your-refresh-token"
+latitude: "51.0848"
+longitude: "-114.1291"
+radius: 100
