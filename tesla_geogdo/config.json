@@ -6,6 +6,28 @@
   "arch": ["amd64", "armv7", "aarch64"],
   "startup": "application",
   "boot": "auto",
-  "options": {},
-  "schema": {}
+  "init": false,
+  "ingress": false,
+  "webui": "http://[HOST]:[PORT:5055]",
+  "ports": {
+    "5055/tcp": 5055
+  },
+  "options": {
+    "client_id": "",
+    "client_secret": "",
+    "redirect_uri": "",
+    "refresh_token": "",
+    "latitude": "",
+    "longitude": "",
+    "radius": 100
+  },
+  "schema": {
+    "client_id": "str",
+    "client_secret": "str",
+    "redirect_uri": "str",
+    "refresh_token": "str",
+    "latitude": "str",
+    "longitude": "str",
+    "radius": "int"
+  }
 }
